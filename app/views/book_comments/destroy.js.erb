@@ -1,0 +1,2 @@
+$("#comment-<%= @book.id %>").html("<%= j(render partial: 'books/comment', locals: {book: @book} )%>");
+<%# onsubmitなどをjQueryが動かしている（省略されている） %>

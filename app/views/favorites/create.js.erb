@@ -1,0 +1,3 @@
+$("#favorite-<%= @book.id %>").html("<%= j(render partial: 'books/post', locals: { book: @book }) %>");
+
+<%# locateを書いているのは、更新する際にどのbookを参照すればいいか改めて入れるため、favorite controllerのcreateと紐づいている %>
